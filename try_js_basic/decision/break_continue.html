@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+var degFahren = new Array(212, "string data", -459.67);
+var degCent = new Array();
+var loopCounter;
+for (loopCounter = 0; loopCounter <= 2; loopCounter++)
+{
+ if (isNaN(degFahren[loopCounter]))
+ {
+ alert("Data ‘" + degFahren[loopCounter] + "‘ at array index " +
+ loopCounter + " is invalid");
+ continue;
+ }
+ degCent[loopCounter] = 5/9 * (degFahren[loopCounter] - 32);
+}
+</script>
+</body>
+</html>

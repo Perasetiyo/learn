@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+			
+		var degFahren = new Array(212, 32, -459.15);
+		var degCent = new Array();
+		var loopCounter;
+		
+		// make loop counter
+		for (loopCounter = 0; loopCounter <= 2; loopCounter++){
+			/* assign loop counter to index array degFahren
+				 assign value degFahren to array degCent	*/
+		 	degCent[loopCounter] = convertToCentigrade(degFahren[loopCounter]);
+		}
+
+		// convert to Centigrade function
+		function convertToCentigrade(degFahren){
+		 	var degCent;
+		 	degCent = 5/9 * (degFahren - 32);
+
+		 	return degCent;
+		}
+
+		function showValue(){
+		 	document.write("Value " + loopCounter + " was " + degFahren[loopCounter] + " degrees Fahrenheit");
+		 	document.write(" which is " + degCent[loopCounter] + " degrees centigrade<br/>");
+		}
+
+		function showAsc(){
+			document.write("Show ascending <br>");
+			for (loopCounter = 0; loopCounter <= 2; loopCounter++){
+				showValue();
+			}
+		}
+		
+		function showDesc(){
+			document.write("Show descending <br>");
+			for (loopCounter = 2; loopCounter >= 0; loopCounter-- ){
+				showValue();
+			}
+		}
+
+		showAsc();
+
+		document.write("<br>");
+
+		showDesc();
+
+	</script>
+</body>
+</html>

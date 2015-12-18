@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alert + Variable</title>
+</head>
+<body>
+	<p>Paragraph 1</p>
+	<script type="text/javascript">
+		document.bgColor = "GREY";
+		alert("First script block");
+	</script>
+
+	<p id="p2">Paragraph 2</p>
+	<script type="text/javascript">
+		document.getElementById("p2").innerHTML = "New content of Paragraph 2";
+	</script>
+
+	<p>Paragraph 3</p>
+	<script type="text/javascript">
+		alert("Second script block after 3rd Paragraph");
+	</script>
+
+	<script type="text/javascript">
+		var myFirstVariable;
+		
+		myFirstVariable = "Hello";
+		alert(myFirstVariable);
+		myFirstVariable = 54321;
+		alert(myFirstVariable);
+	</script>
+	
+	<script type="text/javascript">
+		// Declaring Variables
+		var string1 = "Hello";
+		var string2 = "Goodbye";
+		
+		alert(string1);
+		alert(string2);
+
+		// Nilai string2 diniinstansiasi ke string1
+		string1 = string2;
+		alert(string1);
+		alert(string2);
+
+		string1 = "Now for something different";
+		alert(string1);
+		alert(string2);	
+	</script>
+</body>
+</html>

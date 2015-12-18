@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Substr</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var nama = new Array("Name 1","Name 2");
+
+		var umur = new Array(1,2);
+		var gabung = nama.concat(umur);
+		
+		// assign new concat array to existing array
+		nama = nama.concat(umur);
+
+		/* copy with slice 
+			 the last index not include	*/
+		var slicedArray = nama.slice(1,3);
+		
+		// join element, within something betwen them 
+		var joinArray = nama.join("<br>");
+
+		alert(gabung);
+
+		alert(nama);
+
+		alert(slicedArray);
+
+		document.write(joinArray);
+
+		document.write("<br>");
+
+		// sort
+		var names = new Array("Paul","Sarah","Jeremy","Adam","Bob");
+		var elementIndex;
+
+		names.sort();
+
+		document.write("Now the names again in order" + "<br />");
+		for (elementIndex = 0; elementIndex < names.length; elementIndex++){
+		 document.write(names[elementIndex] + "<br />");
+		}
+
+		// reverse
+		var reverseArray = names.reverse();
+
+		document.write(reverseArray);
+
+		// sample sort + reverse
+		var myShopping = new Array(“Eggs”,”Milk”,”Potatoes”,”Cereal”,”Banana”);
+		var ord = prompt(“Enter 1 for alphabetical order, and -1 for reverse order”, 1);
+		if (ord == 1){
+		 myShopping.sort();
+		 document.write(myShopping.join(“<br />”));
+		}
+		else if (ord == -1){
+		 myShopping.sort();
+		 myShopping.reverse();
+		 document.write(myShopping.join(“<br />”));
+		}
+		else{
+		 document.write(“That is not a valid input”);
+		}
+
+	</script>
+</body>
+</html>

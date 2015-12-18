@@ -1,0 +1,32 @@
+
+numerical data - –2^53 to 2^53 .
+
+Escape Sequences Character Represented
+	\b Backspace
+	\f Form feed
+	\n New line
+	\r Carriage return
+	\t Tab
+	\’ Single quote
+	\” Double quote
+	\\ Backslash
+	\  xNN NN is a hexadecimal number that identifi es a   	   character in the Latin-1 character set.
+
+boolean
+
+variable
+	Invalid names include:
+		❑ with
+		❑ 99variables
+		❑ my%Variable
+		❑ theGood&theBad
+	Valid names include
+		❑ myVariable99
+		❑ myPercent_Variable
+		❑ the_Good_and_the_Bad
+
+The == and != comparison operators have the lowest order of precedence, and the rest of thecomparison operators, <, >, <=, and >=, have an equal precedence.
+
+= operator assigns a value
+
+== operator to compare 

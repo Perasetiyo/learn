@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Substr</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var numbers = new Array(1, 2, 3, 4, 5);
+		function isLessThan3(value, index, array)
+		{
+		 var returnValue = false;
+		 if (value < 3)
+		 {
+		 returnValue = true;
+		 }
+		 return returnValue;
+		}
+		alert(numbers.every(isLessThan3));
+
+		function isLessThan3(value, index, array)
+		{
+		 var returnValue = false;
+		 if (value < 3)
+		 {
+		 returnValue = true;
+		 }
+		 return returnValue;
+		}
+		if (numbers.some(isLessThan3))
+		{
+		 var result = numbers.filter(isLessThan3);
+		 alert("These numbers are less than 3: " + result);
+		}
+
+		var numbers = new Array(1, 2, 3, 4, 5);
+		function doubleAndAlert(value, index, array)
+		{
+		 var result = value * 2;
+		 alert(result);
+		}
+		numbers.forEach(doubleAndAlert);
+
+		function doubleAndAlert(value, index, array)
+		{
+		 var result = value * 2;
+		 return result;
+		}
+		var doubledNumbers = numbers.map(doubleAndAlert);
+		alert("The doubled numbers are: " + doubledNumbers);
+
+	</script>
+</body>
+</html>
